@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  value: 1
+  date: 2020-12-07
+  place: one
+
+two:
+  value: 1
+  date: 2020-12-07
+  place: two

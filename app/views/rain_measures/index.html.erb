@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Rain Measures</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th>Date</th>
+      <th>Place</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rain_measures.each do |rain_measure| %>
+      <tr>
+        <td><%= rain_measure.value %></td>
+        <td><%= rain_measure.date %></td>
+        <td><%= rain_measure.place_id %></td>
+        <td><%= link_to 'Show', rain_measure %></td>
+        <td><%= link_to 'Edit', edit_rain_measure_path(rain_measure) %></td>
+        <td><%= link_to 'Destroy', rain_measure, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Rain Measure', new_rain_measure_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @rain_measure.value %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @rain_measure.date %>
+</p>
+
+<p>
+  <strong>Place:</strong>
+  <%= @rain_measure.place_id %>
+</p>
+
+<%= link_to 'Edit', edit_rain_measure_path(@rain_measure) %> |
+<%= link_to 'Back', rain_measures_path %>
